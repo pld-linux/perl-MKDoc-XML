@@ -5,27 +5,26 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pnam	MKDoc-XML
 Summary:	MKDoc::XML - The MKDoc XML Toolkit
-#Summary(pl):	
+Summary(pl):	MKDoc::XML - zestaw narzêdzi MKDoc XML
 Name:		perl-MKDoc-XML
 Version:	0.75
 Release:	0.1
-# same as perl (REMOVE THIS LINE IF NOT TRUE)
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://search.cpan.org/CPAN/authors/id/B/BP/BPOSTLE/%{pnam}-%{version}.tar.gz
 # Source0-md5:	bae96f16d2f55ac01f562d2e101b2824
+URL:		http://search.cpan.org/dist/MKDoc-XML/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-MKDoc::XML - The MKDoc XML Toolkit
+MKDoc::XML - The MKDoc XML Toolkit.
 
-# %description -l pl
-# TODO
+%description -l pl
+MKDoc::XML - zestaw narzêdzi MKDoc XML.
 
 %prep
 %setup -q -n %{pnam}-%{version}
@@ -49,6 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/MKDoc
 %{perl_vendorlib}/MKDoc/*.pm
 %{perl_vendorlib}/MKDoc/XML
 %{_mandir}/man3/*
