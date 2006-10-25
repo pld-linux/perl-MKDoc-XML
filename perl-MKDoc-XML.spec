@@ -8,7 +8,7 @@ Summary:	MKDoc::XML - The MKDoc XML Toolkit
 Summary(pl):	MKDoc::XML - zestaw narzêdzi MKDoc XML
 Name:		perl-MKDoc-XML
 Version:	0.75
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
