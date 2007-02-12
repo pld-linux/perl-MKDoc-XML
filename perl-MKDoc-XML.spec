@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pnam	MKDoc-XML
 Summary:	MKDoc::XML - The MKDoc XML Toolkit
-Summary(pl):	MKDoc::XML - zestaw narzêdzi MKDoc XML
+Summary(pl.UTF-8):   MKDoc::XML - zestaw narzÄ™dzi MKDoc XML
 Name:		perl-MKDoc-XML
 Version:	0.75
 Release:	1
@@ -23,8 +23,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 MKDoc::XML - The MKDoc XML Toolkit.
 
-%description -l pl
-MKDoc::XML - zestaw narzêdzi MKDoc XML.
+%description -l pl.UTF-8
+MKDoc::XML - zestaw narzÄ™dzi MKDoc XML.
 
 %prep
 %setup -q -n %{pnam}-%{version}
