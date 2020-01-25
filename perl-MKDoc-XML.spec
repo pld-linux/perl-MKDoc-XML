@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pnam	MKDoc-XML
 Summary:	MKDoc::XML - The MKDoc XML Toolkit
 Summary(pl.UTF-8):	MKDoc::XML - zestaw narzędzi MKDoc XML
